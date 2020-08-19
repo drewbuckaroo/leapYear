@@ -5,8 +5,12 @@ $(document).ready(function(){
     
     
   })
-  function isLeapYear(year){
-    return false;
+  function isLeapYear(year) {
+    if (year % 4 === 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
- alert(isLeapYear(1993));
+  alert(isLeapYear(1993));
 });
