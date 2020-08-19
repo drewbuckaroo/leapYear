@@ -6,11 +6,14 @@ $(document).ready(function(){
     
   })
   function isLeapYear(year) {
-    if (year % 4 === 0) {
+    if(year % 100 === 0){
+      return false;
+    }
+    else if (year % 4 === 0) {
       return true;
     } else {
       return false;
     }
   }
-  alert(isLeapYear(1993));
+  alert(isLeapYear(2100));
 });
